@@ -2,13 +2,15 @@
 
 Replace the CSS-built screenshot placeholders with real optimized images in this folder.
 
-Recommended filenames:
+Add your image files here using these exact filenames:
 
 - `logo.svg` - QuietBuild Studio logo
-- `nova-social.webp` - Nova Social Client Portal screenshot
-- `forgefit.webp` - ForgeFit Coaching Website screenshot
-- `quietbuild-studio.webp` - QuietBuild Studio Portfolio screenshot
-- `exam-progress.webp` - Exam Progress Tracker screenshot
-- `ag-fitness.webp` - AG Fitness Concept screenshot
+- `hero-forgefit.png` - screenshot inside the homepage laptop
+- `nova-social.png` - Nova Social Client Portal screenshot
+- `forgefit.png` - ForgeFit Coaching Website screenshot
+- `quietbuild-studio.png` - QuietBuild Studio Portfolio screenshot
+- `exam-progress.png` - Exam Progress Tracker screenshot
+- `ag-fitness.png` - AG Fitness Concept screenshot
 
-Use WebP or AVIF for screenshots where possible.
+You can use different filenames or formats, but update the matching path in
+`src/data/siteData.js`.
