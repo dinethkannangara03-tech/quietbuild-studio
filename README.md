@@ -1,30 +1,14 @@
-# QuietBuild Studio Pro
+# QuietBuild Studio image assets
 
-A premium, responsive React + Vite portfolio for QuietBuild Studio.
+Replace the CSS-built screenshot placeholders with real optimized images in this folder.
 
-## Run locally
+Recommended filenames:
 
-```bash
-npm install
-npm run dev
-```
+- `logo.svg` - QuietBuild Studio logo
+- `nova-social.webp` - Nova Social Client Portal screenshot
+- `forgefit.webp` - ForgeFit Coaching Website screenshot
+- `quietbuild-studio.webp` - QuietBuild Studio Portfolio screenshot
+- `exam-progress.webp` - Exam Progress Tracker screenshot
+- `ag-fitness.webp` - AG Fitness Concept screenshot
 
-## Production build
-
-```bash
-npm run build
-```
-
-## Routes
-
-- `/`
-- `/work`
-- `/services`
-- `/about`
-- `/contact`
-
-## Assets and links to replace
-
-Real visual assets belong in `public/images/`. See `public/images/README.md` for recommended filenames.
-
-Replace the placeholder email, WhatsApp number, GitHub URL, social URLs, live demo links, and case-study placeholders before launch. Connect the contact form to a backend before enabling its submit button.
+Use WebP or AVIF for screenshots where possible.
