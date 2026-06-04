@@ -1,18 +1,18 @@
+import { useState } from 'react'
+
 function ProjectVisual({ project, compact = false }) {
+  const [imageMissing, setImageMissing] = useState(false)
+
   return (
-    <div className={`project-visual project-${project.slug} ${compact ? 'compact' : ''}`} aria-label={`${project.title} screenshot placeholder`}>
-      <div className="visual-browser">
-        <div className="visual-top"><span /><span /><span /><b /></div>
-        <div className="visual-content">
-          <div className="visual-sidebar"><i /><i /><i /><i /></div>
-          <div className="visual-main">
-            <div className="visual-title" />
-            <div className="visual-line" />
-            <div className="visual-grid"><i /><i /><i /></div>
-          </div>
+    <div className={`project-visual ${compact ? 'compact' : ''}`}>
+      {!imageMissing ? (
+        <img src={project.imagePath} alt={`${project.title} project screenshot`} onError={() => setImageMissing(true)} />
+      ) : (
+        <div className="image-fallback">
+          <strong>Project image coming soon</strong>
+          <span>Add the image at {project.imagePath}</span>
         </div>
-      </div>
-      <span className="placeholder-tag">Screenshot placeholder</span>
+      )}
     </div>
   )
 }
