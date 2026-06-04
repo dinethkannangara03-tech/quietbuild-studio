@@ -1,24 +1,29 @@
 import { Link } from 'react-router-dom'
-import { ArrowIcon, BoltIcon, DeviceIcon, ShieldIcon } from '../components/Icons'
+import ContentIcon from '../components/ContentIcon'
+import { ArrowIcon } from '../components/Icons'
+import siteData from '../data/siteData'
 
 function About() {
+  const page = siteData.pages.about
+
   return (
     <>
-      <section className="page-hero section"><div className="container narrow"><span className="eyebrow">About the studio</span><h1>Quiet work. Clear thinking. Useful outcomes.</h1><p className="lead">QuietBuild Studio helps small businesses present themselves with more confidence through clean websites and focused web systems.</p></div></section>
+      <section className="page-hero section"><div className="container narrow"><span className="eyebrow">{page.eyebrow}</span><h1>{page.heading}</h1><p className="lead">{page.description}</p></div></section>
       <section className="section page-content">
         <div className="container about-grid">
           <div className="about-copy">
-            <span className="eyebrow">The mission</span>
-            <h2>Make professional digital work feel straightforward.</h2>
-            <p>A good website should explain your business clearly, work well on a phone, and help visitors know what to do next. The goal is not to fill every inch of the screen. It is to build the right thing, with care.</p>
-            <p>QuietBuild focuses on honest communication, thoughtful design, and practical systems. No inflated promises. No unnecessary complexity. Just a clear path from idea to launch.</p>
+            <span className="eyebrow">{page.missionEyebrow}</span>
+            <h2>{page.missionHeading}</h2>
+            {page.paragraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
             <Link className="button button-primary" to="/contact">Start a conversation <ArrowIcon /></Link>
           </div>
           <div className="values-grid">
-            <article><DeviceIcon /><h3>Mobile experience</h3><p>Layouts are shaped for small screens from the start.</p></article>
-            <article><BoltIcon /><h3>Speed &amp; clarity</h3><p>Pages stay focused, lightweight, and easy to understand.</p></article>
-            <article><ShieldIcon /><h3>Useful systems</h3><p>Features earn their place by solving a real problem.</p></article>
-            <article><span className="value-number">03</span><h3>Simple process</h3><p>Share the goal, review a clean preview, then launch confidently.</p></article>
+            {page.values.map((value, index) => (
+              <article key={value.title}>
+                {value.icon === 'number' ? <span className="value-number">{String(index + 1).padStart(2, '0')}</span> : <ContentIcon name={value.icon} />}
+                <h3>{value.title}</h3><p>{value.description}</p>
+              </article>
+            ))}
           </div>
         </div>
       </section>
