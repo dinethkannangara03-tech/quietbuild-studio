@@ -5,7 +5,7 @@
 export const siteData = {
   studio: {
     name: 'QuietBuild Studio',
-    logoPath: 'public/images/quietbuild.png',
+    logoPath: '/images/quietbuild.png',
     email: 'dinethkannangara03@gmail.com',
     whatsappLink: 'https://wa.me/94719952251',
     githubLink: 'https://github.com/',
@@ -28,7 +28,7 @@ export const siteData = {
     headline: 'Websites that make small businesses',
     highlightedHeadline: 'look bigger.',
     description: 'QuietBuild Studio creates clean, mobile-friendly websites and simple web systems for coaches, agencies, gyms, tutors, and service businesses.',
-    heroImage: '/public/images/hero-forgefit.png',
+    heroImage: '/images/hero-forgefit.png',
     proofItems: ['Clean design', 'Mobile friendly', 'Useful systems','budgest friendly'],
     featureCards: [
       { icon: 'device', title: 'Mobile Friendly', description: 'Built for every screen' },
@@ -49,7 +49,7 @@ export const siteData = {
       title: 'Nova Social Client Portal',
       type: 'Concept Project',
       description: 'A calm, organized portal concept for managing client content and approvals. this got real login systems with google and emails. this is only a sample site this no real details',
-      imagePath: '/public/images/nova-social.png',
+      imagePath: '/images/nova-social.png',
       liveLink: 'https://nova-social-client-portal.vercel.app',
     },
     {
@@ -57,7 +57,7 @@ export const siteData = {
       title: 'ForgeFit Coaching Website',
       type: 'Concept Project',
       description: 'A focused fitness coaching website designed to turn interest into action.this is also just sample it does not connect to anything real',
-      imagePath: '/public/images/forgefit.png',
+      imagePath: '/images/forgefit.png',
       liveLink: 'https://dinethkannangara-aus.github.io/fitness-coach-website-demo/',
     },
     {
@@ -65,7 +65,7 @@ export const siteData = {
       title: 'QuietBuild Studio Portfolio',
       type: 'Client Work',
       description: 'A premium studio portfolio built around clarity, confidence, and conversion.',
-      imagePath: '/public/images/quietbuild.png',
+      imagePath: '/images/quietbuild.png',
       liveLink: 'https://dinethkannangara-aus.github.io/quietbuild-studio-official/',
     },
     {
@@ -73,7 +73,7 @@ export const siteData = {
       title: 'Exam Progress Tracker',
       type: 'Concept Project',
       description: 'A simple dashboard concept that makes study progress easy to understand.',
-      imagePath: '/public/images/exam-tracker.png',
+      imagePath: '/images/exam-tracker.png',
       liveLink: 'https://dinethkannangara-aus.github.io/exam-progress-tracker01/',
     },
   ],
