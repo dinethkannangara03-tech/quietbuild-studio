@@ -5,16 +5,14 @@
 export const siteData = {
   studio: {
     name: 'QuietBuild Studio',
-    logoPath: '/images/logo.svg',
-    email: 'hello@quietbuildstudio.com',
-    whatsappLink: 'https://wa.me/94000000000',
-    whatsappLabel: '+94 00 000 0000',
+    logoPath: 'public/images/quietbuild.png',
+    email: 'dinethkannangara03@gmail.com',
+    whatsappLink: 'https://wa.me/94719952251',
     githubLink: 'https://github.com/',
-    githubLabel: 'github.com/quietbuildstudio',
     socialLinks: [
-      { label: 'LinkedIn', url: '#' },
-      { label: 'Instagram', url: '#' },
-      { label: 'Behance', url: '#' },
+      { label: 'Tiktok', url: 'https://www.tiktok.com/@quietbuild.studio' },
+      { label: 'Instagram', url: 'https://www.instagram.com/quietbuild.studio?igsh=MW4zdGZkZ3VjeTdleA%3D%3D&utm_source=qr' },
+      { label: 'Facebook', url: 'https://www.facebook.com/profile.php?id=61590065537490' },
     ],
   },
 
@@ -27,14 +25,13 @@ export const siteData = {
   ],
 
   hero: {
-    eyebrow: 'Websites & web systems that drive results.',
     headline: 'Websites that make small businesses',
     highlightedHeadline: 'look bigger.',
     description: 'QuietBuild Studio creates clean, mobile-friendly websites and simple web systems for coaches, agencies, gyms, tutors, and service businesses.',
-    heroImage: '/images/hero-forgefit.png',
-    proofItems: ['Clean design', 'Mobile friendly', 'Useful systems'],
+    heroImage: '/public/images/hero-forgefit.png',
+    proofItems: ['Clean design', 'Mobile friendly', 'Useful systems','budgest friendly'],
     featureCards: [
-      { icon: 'device', title: 'Mobile First', description: 'Built for every screen' },
+      { icon: 'device', title: 'Mobile Friendly', description: 'Built for every screen' },
       { icon: 'bolt', title: 'Fast Loading', description: 'Performance focused' },
       { icon: 'shield', title: 'Simple Client Portals', description: 'Everything in one place' },
     ],
@@ -51,41 +48,33 @@ export const siteData = {
       slug: 'nova',
       title: 'Nova Social Client Portal',
       type: 'Concept Project',
-      description: 'A calm, organized portal concept for managing client content and approvals.',
-      imagePath: '/images/nova-social.png',
-      liveLink: '#',
+      description: 'A calm, organized portal concept for managing client content and approvals. this got real login systems with google and emails. this is only a sample site this no real details',
+      imagePath: '/public/images/nova-social.png',
+      liveLink: 'https://nova-social-client-portal.vercel.app',
     },
     {
       slug: 'forgefit',
       title: 'ForgeFit Coaching Website',
       type: 'Concept Project',
-      description: 'A focused fitness coaching website designed to turn interest into action.',
-      imagePath: '/images/forgefit.png',
-      liveLink: '#',
+      description: 'A focused fitness coaching website designed to turn interest into action.this is also just sample it does not connect to anything real',
+      imagePath: '/public/images/forgefit.png',
+      liveLink: 'https://dinethkannangara-aus.github.io/fitness-coach-website-demo/',
     },
     {
       slug: 'quietbuild',
       title: 'QuietBuild Studio Portfolio',
       type: 'Client Work',
       description: 'A premium studio portfolio built around clarity, confidence, and conversion.',
-      imagePath: '/images/quietbuild-studio.png',
-      liveLink: '#',
+      imagePath: '/public/images/quietbuild.png',
+      liveLink: 'https://dinethkannangara-aus.github.io/quietbuild-studio-official/',
     },
     {
       slug: 'exam',
       title: 'Exam Progress Tracker',
       type: 'Concept Project',
       description: 'A simple dashboard concept that makes study progress easy to understand.',
-      imagePath: '/images/exam-progress.png',
-      liveLink: '#',
-    },
-    {
-      slug: 'agfitness',
-      title: 'AG Fitness Concept',
-      type: 'Concept Project',
-      description: 'A bold but business-focused landing page concept for a personal trainer.',
-      imagePath: '/images/ag-fitness.png',
-      liveLink: '#',
+      imagePath: '/public/images/exam-tracker.png',
+      liveLink: 'https://dinethkannangara-aus.github.io/exam-progress-tracker01/',
     },
   ],
 
@@ -95,7 +84,7 @@ export const siteData = {
     { icon: 'device', title: 'Landing Pages', description: 'Single-purpose pages shaped around one offer, launch, or campaign.', suitable: 'New offers, campaigns, and lead generation' },
     { icon: 'shield', title: 'Client Portals', description: 'Simple private spaces where clients can find updates, files, and next steps.', suitable: 'Service businesses with repeatable client workflows' },
     { icon: 'shield', title: 'Login Systems', description: 'Straightforward login experiences for small protected tools and portals.', suitable: 'Simple member areas and internal tools' },
-    { icon: 'layout', title: 'Simple Dashboards', description: 'Useful interfaces that turn a small set of data into clear actions.', suitable: 'Trackers, progress views, and focused admin tools' },
+    { icon: 'layout', title: 'Full system', description: 'Useful interfaces that turn a  set of data into clear actions. You can custormize this.', suitable: 'Trackers, progress views, and focused admin tools' },
   ],
 
   process: {
@@ -104,7 +93,8 @@ export const siteData = {
     steps: [
       { number: '01', title: 'Tell me what you need', description: 'You share your ideas, goals, and requirements.' },
       { number: '02', title: 'I build a clean preview', description: 'I create a modern, responsive preview for your feedback.' },
-      { number: '03', title: 'You review and launch', description: 'You review, approve, and I help you launch with confidence.' },
+      { number: '03', title: 'You review and change what need change', description: 'You review, and tell things that need to change, and I help you launch with confidence.' },
+      { number: '04', title: 'You approve and launch', description: 'You review and approve it, then we lauch the website with cutormized domaines if you need'},
     ],
   },
 
@@ -116,17 +106,16 @@ export const siteData = {
 
   pages: {
     work: {
-      eyebrow: 'Selected work',
+      eyebrow: 'Our sample works',
       heading: 'Digital experiences built with purpose.',
       description: 'A collection of website and web-system concepts focused on clear design, mobile usability, and practical business goals.',
     },
     services: {
-      eyebrow: 'Services',
       heading: 'Practical digital work, built around your goal.',
       description: 'Focused websites and simple systems for businesses that need to look professional and work smoothly.',
     },
     about: {
-      eyebrow: 'About the studio',
+      eyebrow: 'About who we are and what we do',
       heading: 'Quiet work. Clear thinking. Useful outcomes.',
       description: 'QuietBuild Studio helps small businesses present themselves with more confidence through clean websites and focused web systems.',
       missionEyebrow: 'The mission',
@@ -143,7 +132,6 @@ export const siteData = {
       ],
     },
     contact: {
-      eyebrow: 'Start a project',
       heading: 'Tell me what you want to build.',
       description: "Share your goal, timeline, and the kind of support you need. I'll help turn it into a clear next step.",
       detailsEyebrow: 'Contact details',
