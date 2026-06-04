@@ -12,7 +12,7 @@ function ProjectCard({ project, large = false }) {
         <p>{project.description}</p>
         <div className="project-actions">
           <Link className="text-link" to="/contact">View Project <ArrowIcon /></Link>
-          {large && <a className="button button-ghost button-small" href="#" aria-label={`${project.title} live demo placeholder`}>Live Demo</a>}
+          {large && <a className="button button-ghost button-small" href={project.liveLink} target={project.liveLink === '#' ? undefined : '_blank'} rel="noreferrer">Live Demo</a>}
           {large && <span className="case-note">Case study coming soon</span>}
         </div>
       </div>
