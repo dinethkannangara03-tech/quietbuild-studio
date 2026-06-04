@@ -1,13 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-
-const links = [
-  ['/', 'Home'],
-  ['/work', 'Work'],
-  ['/services', 'Services'],
-  ['/about', 'About'],
-  ['/contact', 'Contact'],
-]
+import siteData from '../data/siteData'
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -18,9 +11,10 @@ function Navbar() {
   return (
     <header className="navbar-wrap">
       <nav className="navbar container" aria-label="Main navigation">
-        <Link className="brand" to="/" aria-label="QuietBuild Studio home">
+        <Link className="brand" to="/" aria-label={`${siteData.studio.name} home`}>
+          <img className="brand-logo" src={siteData.studio.logoPath} alt="" onError={event => event.currentTarget.remove()} />
           <span className="brand-mark" aria-hidden="true"><i /><i /><i /></span>
-          <span>QuietBuild <strong>Studio</strong></span>
+          <span>{siteData.studio.name}</span>
         </Link>
 
         <button
@@ -36,8 +30,8 @@ function Navbar() {
 
         <div id="nav-menu" className={`nav-menu ${open ? 'is-open' : ''}`}>
           <div className="nav-links">
-            {links.map(([to, label]) => (
-              <NavLink key={to} to={to} end={to === '/'}>{label}</NavLink>
+            {siteData.navigation.map(link => (
+              <NavLink key={link.path} to={link.path} end={link.path === '/'}>{link.label}</NavLink>
             ))}
           </div>
           <Link className="button button-small button-primary" to="/contact">Start a Project</Link>
