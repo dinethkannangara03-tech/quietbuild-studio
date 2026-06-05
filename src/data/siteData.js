@@ -5,7 +5,7 @@
 export const siteData = {
   studio: {
     name: 'QuietBuild Studio',
-    logoPath: '/images/quietbuild.png',
+    logoPath: '/images/quietbuild-logo.png',
     email: 'dinethkannangara03@gmail.com',
     whatsappLink: 'https://wa.me/94719952251',
     githubLink: 'https://github.com/',
