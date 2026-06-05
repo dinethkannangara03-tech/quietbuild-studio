@@ -29,6 +29,7 @@ export const siteData = {
     highlightedHeadline: 'look bigger.',
     description: 'QuietBuild Studio creates clean, mobile-friendly websites and simple web systems for coaches, agencies, gyms, tutors, and service businesses.',
     heroImage: '/images/hero-forgefit.png',
+    phoneImage: '/images/phone-portal.png',
     proofItems: ['Clean design', 'Mobile friendly', 'Useful systems','budgest friendly'],
     featureCards: [
       { icon: 'device', title: 'Mobile Friendly', description: 'Built for every screen' },
