@@ -23,11 +23,7 @@ function HeroVisual() {
       </div>
       <div className="phone">
         <div className="phone-notch" />
-        <small>Good morning</small>
-        <strong>Your portal</strong>
-        <div className="portal-card"><span>Project progress</span><b>78%</b><i /></div>
-        <div className="portal-task"><i>✓</i><span><b>Homepage review</b><small>Completed</small></span></div>
-        <div className="portal-task"><i>2</i><span><b>Content upload</b><small>In progress</small></span></div>
+        <img className="phone-screen-image" src={siteData.hero.phoneImage} alt="Client portal preview" />
       </div>
       {siteData.hero.featureCards.map((feature, index) => (
         <div className={`float-card float-${['one', 'two', 'three'][index]}`} key={feature.title}>
